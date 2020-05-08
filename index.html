@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19-India-Tracker</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="/script.js"></script>
+</head>
+<body>
+    <div class="container-fluid p-5 bg-light text-center my-3">
+        <h1>Covid19 India Tracker</h1>
+        <h5 class="text-muted">
+            Project for tracking covid 19 cases in India
+        </h5>
+    </div>
+    
+    <div class="container text-center my-2">
+        <select name="sta" id="sta">
+        </select>
+
+        <button id="btnSearch" onclick="search();">Click Me!!</button>
+
+        <button id="hideTable" onclick="hideMytable();">Table</button>
+    </div>
+
+    <div class="container my-5">
+        <div class="row text-center">
+            <div class="col-3 text-warning">
+                <h5>Confirmed</h5>
+                <p id="confirmed"></p>
+            </div>
+            <div class="col-3 text-info">
+                <h5>Active</h5>
+                <p id="active"></p>
+            </div>
+            <div class="col-3 text-success">
+                <h5>Recovered</h5>
+                <p id="recovered"></p>
+            </div>
+            <div class="col-3 text-danger">
+                <h5>Deceased</h5>
+                <p id="deaths"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id = "hideMe">
+        <table id="stateTable" class="container bg-light text-center my-3"></table>
+    </div>
+    <canvas id="myChart"></canvas>
+</body>
+</html>

@@ -1,0 +1,18 @@
+#stateTable{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr:nth-child(even) {
+    text-align: left;
+    border: 2px;
+    background-color: burlywood;
+}
+
+td{
+    text-align: left;
+    border-width: 2px;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
